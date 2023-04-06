@@ -25,6 +25,14 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
  */
 function wp2static_addon_azure_activate(): void
 {
+    do_action(
+        'wp2static_register_addon',
+        'wp2static-addon-azure',
+        'deploy',
+        'Azure Deployment',
+        'https://github.com/mareksloser/wp2static-addon-azure',
+        'Adds Microsoft Azure Cloud Storage as a deployment option for WP2Static'
+    );
 }
 register_activation_hook( __FILE__, 'wp2static_addon_azure_activate' );
 
