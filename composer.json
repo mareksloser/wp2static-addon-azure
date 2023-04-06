@@ -1,0 +1,25 @@
+{
+    "name": "msloser/wp2static-addon-azure",
+    "description": "Adds Microsoft Azure Cloud Storage as a deployment option for WP2Static",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Msloser\\Wp2staticAddonAzure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marek Šloser",
+            "email": "marek.sloser@nakit.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
