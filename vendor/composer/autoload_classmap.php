@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'Msloser\\Wp2staticAddonAzure\\Admin\\AzureAdmin' => $baseDir . '/src/Admin/AzureAdmin.php',
+    'Msloser\\Wp2staticAddonAzure\\Admin\\Admin' => $baseDir . '/src/Admin/Admin.php',
     'Msloser\\Wp2staticAddonAzure\\Azure\\AzureAddon' => $baseDir . '/src/Azure/AzureAddon.php',
     'Msloser\\Wp2staticAddonAzure\\Base\\BaseController' => $baseDir . '/src/Base/BaseController.php',
     'Msloser\\Wp2staticAddonAzure\\Init' => $baseDir . '/src/Init.php',

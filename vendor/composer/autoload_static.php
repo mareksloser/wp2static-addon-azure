@@ -22,7 +22,7 @@ class ComposerStaticInit134b5b9a49ca2a117b64e440986027f7
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Msloser\\Wp2staticAddonAzure\\Admin\\AzureAdmin' => __DIR__ . '/../..' . '/src/Admin/AzureAdmin.php',
+        'Msloser\\Wp2staticAddonAzure\\Admin\\Admin' => __DIR__ . '/../..' . '/src/Admin/Admin.php',
         'Msloser\\Wp2staticAddonAzure\\Azure\\AzureAddon' => __DIR__ . '/../..' . '/src/Azure/AzureAddon.php',
         'Msloser\\Wp2staticAddonAzure\\Base\\BaseController' => __DIR__ . '/../..' . '/src/Base/BaseController.php',
         'Msloser\\Wp2staticAddonAzure\\Init' => __DIR__ . '/../..' . '/src/Init.php',
