@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Msloser\Wp2staticAddonAzure;
 
 
-use Msloser\Wp2staticAddonAzure\Admin\AzureAdmin;
+use Msloser\Wp2staticAddonAzure\Admin\Admin;
 
 final class Init
 {
@@ -37,7 +37,7 @@ final class Init
     public function get_services(): array
     {
         return [
-            AzureAdmin::class,
+            Admin::class,
         ];
     }
 
