@@ -11,6 +11,9 @@
  **/
 
 
+use Msloser\Wp2staticAddonAzure\Base\Activate;
+use Msloser\Wp2staticAddonAzure\Base\Deactivate;
+use Msloser\Wp2staticAddonAzure\Base\Uninstall;
 use Msloser\Wp2staticAddonAzure\Init;
 
 // If this file is called directly, abort!!!
@@ -23,25 +26,16 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 /**
  * Activate the plugin.
  */
-function wp2static_addon_azure_activate(): void
-{
-    do_action(
-        'wp2static_register_addon',
-        'wp2static-addon-azure',
-        'deploy',
-        'Azure Deployment',
-        'https://github.com/mareksloser/wp2static-addon-azure',
-        'Adds Microsoft Azure Cloud Storage as a deployment option for WP2Static'
-    );
-}
-register_activation_hook( __FILE__, 'wp2static_addon_azure_activate' );
+register_activation_hook(__FILE__, [Activate::class, 'activate']);
 
 /**
  * Deactivation hook.
  */
-function wp2static_addon_azure_deactivate(): void
-{
-}
-register_deactivation_hook( __FILE__, 'wp2static_addon_azure_deactivate' );
+register_deactivation_hook(__FILE__, [Deactivate::class, 'deactivate']);
+
+/**
+ * Uninstall hook.
+ */
+register_uninstall_hook(__FILE__, [Uninstall::class, 'uninstall']);
 
 Init::instance();

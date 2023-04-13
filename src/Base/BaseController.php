@@ -11,6 +11,7 @@ use Msloser\Wp2staticAddonAzure\Loader\Loader;
 class BaseController
 {
     public string $plugin_name;
+    public string $plugin_table;
     public string $version;
     public Loader $loader;
 
@@ -22,6 +23,7 @@ class BaseController
     {
         $this->version      = '0.2';
         $this->plugin_name  = 'wp2static-addon-azure';
+        $this->plugin_table = 'wp2static_addon_azure_options';
 
         $this->plugin_path  = plugin_dir_path( dirname( __FILE__, 2) );
         $this->plugin_url   = plugin_dir_url(  dirname( __FILE__, 2) );
